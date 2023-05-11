@@ -1,0 +1,43 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"55 C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"85
+[v _Init_HFINTOSC Init_HFINTOSC `(v  1 e 1 0 ]
+"591 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"715
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"777
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+"23195
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"23432
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"23541
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"32870
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"34110
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"55 C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"69
+} 0
+"85
+[v _Init_HFINTOSC Init_HFINTOSC `(v  1 e 1 0 ]
+{
+"99
+} 0
