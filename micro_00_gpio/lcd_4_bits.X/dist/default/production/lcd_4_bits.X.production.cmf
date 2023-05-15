@@ -7,22 +7,28 @@
 # Each line that follows describes a psect in that object file, until
 # the next object file.  The lines that describe a psect have the
 # format:
-#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
-idloc IDLOC 5 8000 8000 4 2 1
-reset_vec CODE 0 0 0 2 2 1
-end_init CODE 0 2 2 2 2 1
-config CONFIG 4 8007 8007 5 2 1
 $dist/default/production\lcd_4_bits.X.production.o
-cinit CODE 0 7FD 7FD 3 2 1
-idloc IDLOC 5 8000 8000 4 2 1
-text1 CODE 0 7CF 7CF D 2 1
-maintext CODE 0 7DC 7DC 21 2 1
-cstackCOMMON COMMON 1 70 70 3 1 1
-config CONFIG 4 8007 8007 5 2 1
+cinit CODE 0 7FD 7FD 3 2
+idloc IDLOC 5 8000 8000 4 2
+text1 CODE 0 72A 72A B 2
+text2 CODE 0 735 735 D 2
+text3 CODE 0 717 717 8 2
+text4 CODE 0 742 742 1C 2
+text5 CODE 0 71F 71F B 2
+text6 CODE 0 7A2 7A2 5B 2
+text7 CODE 0 75E 75E 1F 2
+maintext CODE 0 77D 77D 25 2
+cstackCOMMON COMMON 1 70 70 9 1
+config CONFIG 4 8007 8007 5 2
+$C:\Users\jmott\AppData\Local\Temp\xcAs58g.o
+idloc IDLOC 5 8000 8000 4 2
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 2 2 2 2
+config CONFIG 4 8007 8007 5 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -52,9 +58,9 @@ BANK6 320-36F 1
 BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
-CONST 4-7CE 2
+CONST 4-716 2
 CONST 800-1FFF 2
-ENTRY 4-7CE 2
+ENTRY 4-716 2
 ENTRY 800-1FFF 2
 SFR10 500-51F 1
 SFR11 580-59F 1
@@ -78,7 +84,8 @@ SFR28 E00-E6F 1
 SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
-CODE 4-7CE 2
+STACK 2000-23EF 1
+CODE 4-716 2
 CODE 800-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -94,11 +101,11 @@ BANK10 520-56F 1
 BANK11 5A0-5EF 1
 BANK12 620-64F 1
 BIGRAM 2000-23EF 1
-COMMON 73-7D 1
+COMMON 79-7D 1
 EEDATA F000-F0FF 2
-STRCODE 4-7CE 2
+STRCODE 4-716 2
 STRCODE 800-1FFF 2
-STRING 4-7CE 2
+STRING 4-716 2
 STRING 800-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -114,24 +121,70 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\lcd_4_bits.X.production.o
-7FD cinit CODE >2217:C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_1.s
-7FD cinit CODE >2220:C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_1.s
-7FD cinit CODE >2226:C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_1.s
-7FD cinit CODE >2228:C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_1.s
-7FE cinit CODE >2229:C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_1.s
-7CF text1 CODE >85:C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
-7CF text1 CODE >88:C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
-7D1 text1 CODE >91:C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
-7D5 text1 CODE >92:C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
-7D6 text1 CODE >95:C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
-7D7 text1 CODE >98:C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
-7DB text1 CODE >99:C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
-7DC maintext CODE >55:C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
-7DC maintext CODE >57:C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
-7DF maintext CODE >60:C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
-7E4 maintext CODE >61:C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
-7E9 maintext CODE >65:C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
-7EE maintext CODE >66:C:\Users\Administrador\Desktop\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7FD cinit CODE >2227:C:\Users\jmott\AppData\Local\Temp\xcAs58g.s
+7FD cinit CODE >2230:C:\Users\jmott\AppData\Local\Temp\xcAs58g.s
+7FD cinit CODE >2236:C:\Users\jmott\AppData\Local\Temp\xcAs58g.s
+7FD cinit CODE >2238:C:\Users\jmott\AppData\Local\Temp\xcAs58g.s
+7FE cinit CODE >2239:C:\Users\jmott\AppData\Local\Temp\xcAs58g.s
+75E text7 CODE >137:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+75E text7 CODE >140:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+763 text7 CODE >142:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+767 text7 CODE >144:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+76C text7 CODE >146:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+770 text7 CODE >148:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+774 text7 CODE >149:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+778 text7 CODE >152:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+77C text7 CODE >153:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7A2 text6 CODE >119:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7A3 text6 CODE >121:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7A3 text6 CODE >122:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7A8 text6 CODE >123:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7AE text6 CODE >123:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7B4 text6 CODE >124:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7B9 text6 CODE >125:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7CF text6 CODE >126:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7D4 text6 CODE >128:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7D8 text6 CODE >130:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7DD text6 CODE >131:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7F3 text6 CODE >132:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7F8 text6 CODE >134:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+7FC text6 CODE >135:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+71F text5 CODE >113:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+720 text5 CODE >115:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+725 text5 CODE >116:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+729 text5 CODE >117:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+742 text4 CODE >94:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+742 text4 CODE >96:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+745 text4 CODE >98:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+749 text4 CODE >99:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+74D text4 CODE >100:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+751 text4 CODE >101:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+755 text4 CODE >102:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+759 text4 CODE >103:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+75D text4 CODE >104:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+717 text3 CODE >107:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+718 text3 CODE >109:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+71A text3 CODE >110:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+71E text3 CODE >111:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+735 text2 CODE >155:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+735 text2 CODE >158:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+737 text2 CODE >161:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+73B text2 CODE >162:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+73C text2 CODE >165:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+73D text2 CODE >168:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+741 text2 CODE >169:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+72A text1 CODE >88:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+72A text1 CODE >90:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+72F text1 CODE >91:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+734 text1 CODE >92:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+77D maintext CODE >70:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+77D maintext CODE >72:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+780 maintext CODE >73:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+783 maintext CODE >74:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+786 maintext CODE >75:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+78A maintext CODE >76:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+78E maintext CODE >79:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
+793 maintext CODE >80:D:\Escritorio\Xpress_Board_Pic16f18855\micro_00_gpio\lcd_4_bits.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -146,36 +199,47 @@ $dist/default/production\lcd_4_bits.X.production.o
 %SYMTAB
 ___latbits 2 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
 __Hspace_0 800 0 ABS 0 - -
-__Hspace_1 73 0 ABS 0 - -
+__Hspace_1 79 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 10013 0 ABS 0 - -
+__end_of_FM_Lcd_Send_Command E54 0 CODE 0 text5 dist/default/production\lcd_4_bits.X.production.o
+__size_of_FM_Lcd_Send_Nibble 0 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-__L__absolute__ 0 0 ABS 0 __absolute__ -
+__end_of_FM_Lcd_Init_Gpio EFA 0 CODE 0 text7 dist/default/production\lcd_4_bits.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _LATA 16 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
-_main FB8 0 CODE 0 maintext dist/default/production\lcd_4_bits.X.production.o
+_LATC 18 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\jmott\AppData\Local\Temp\xcAs58g.o
+_main EFA 0 CODE 0 maintext dist/default/production\lcd_4_bits.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
-start 4 0 CODE 0 init C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
+start 4 0 CODE 0 init C:\Users\jmott\AppData\Local\Temp\xcAs58g.o
+__size_of_main 0 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
+__size_of_FM_Lcd_Init_Gpio 0 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
+__end_of_Init_System_Gpio E6A 0 CODE 0 text1 dist/default/production\lcd_4_bits.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\jmott\AppData\Local\Temp\xcAs58g.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\jmott\AppData\Local\Temp\xcAs58g.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\jmott\AppData\Local\Temp\xcAs58g.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\jmott\AppData\Local\Temp\xcAs58g.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\jmott\AppData\Local\Temp\xcAs58g.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\jmott\AppData\Local\Temp\xcAs58g.o
 wtemp0 7E 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
+__size_of_Init_System_Gpio 0 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
+FM_Lcd_Send_Nibble@lower_bits 74 0 COMMON 1 cstackCOMMON dist/default/production\lcd_4_bits.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
+FM_Lcd_Send_Charact@charac 75 0 COMMON 1 cstackCOMMON dist/default/production\lcd_4_bits.X.production.o
 _ANSELA F38 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
 _ANSELC F4E 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
-___stacklo 0 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
+___stackhi 23EF 0 ABS 0 - C:\Users\jmott\AppData\Local\Temp\xcAs58g.o
+___stacklo 2000 0 ABS 0 - C:\Users\jmott\AppData\Local\Temp\xcAs58g.o
+FM_Lcd_Send_Nibble@upper_bits 73 0 COMMON 1 cstackCOMMON dist/default/production\lcd_4_bits.X.production.o
 start_initialization FFA 0 CODE 0 cinit dist/default/production\lcd_4_bits.X.production.o
 _OSCFRQ 893 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
+__size_of_FM_Lcd_Init_Config 0 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\jmott\AppData\Local\Temp\xcAs58g.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -274,7 +338,6 @@ __Lsfr31 0 0 ABS 0 sfr31 -
 __Lstack 0 0 STACK 2 stack -
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
-__Hheap 0 0 HEAP 7 heap -
 __Hinit 4 0 CODE 0 init -
 __Hsfr0 0 0 ABS 0 sfr0 -
 __Hsfr1 0 0 ABS 0 sfr1 -
@@ -289,7 +352,6 @@ __Hsfr9 0 0 ABS 0 sfr9 -
 __Htext 0 0 ABS 0 text -
 __Labs1 0 0 ABS 0 abs1 -
 __Lcode 0 0 ABS 0 code -
-__Lheap 0 0 HEAP 7 heap -
 __Linit 4 0 CODE 0 init -
 __Lsfr0 0 0 ABS 0 sfr0 -
 __Lsfr1 0 0 ABS 0 sfr1 -
@@ -304,10 +366,12 @@ __Lsfr9 0 0 ABS 0 sfr9 -
 __Ltext 0 0 ABS 0 text -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __S0 800 0 ABS 0 - -
-__S1 73 0 ABS 0 - -
+__S1 79 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\jmott\AppData\Local\Temp\xcAs58g.o
+__end_of_FM_Lcd_Send_Nibble FFA 0 CODE 0 text6 dist/default/production\lcd_4_bits.X.production.o
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -330,11 +394,13 @@ __Lbank28 0 0 BANK28 1 bank28 -
 __Lbank29 0 0 BANK29 1 bank29 -
 __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext FB8 0 CODE 0 maintext dist/default/production\lcd_4_bits.X.production.o
+__pmaintext EFA 0 CODE 0 maintext dist/default/production\lcd_4_bits.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-_Init_HFINTOSC F9E 0 CODE 0 text1 dist/default/production\lcd_4_bits.X.production.o
+_Init_HFINTOSC E6A 0 CODE 0 text2 dist/default/production\lcd_4_bits.X.production.o
+__size_of_FM_Lcd_Send_Charact 0 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
+_FM_Lcd_Send_Nibble F44 0 CODE 0 text6 dist/default/production\lcd_4_bits.X.production.o
 _OSCCON1 88D 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
@@ -343,30 +409,44 @@ __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
 __Lend_init 4 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_FM_Lcd_Send_Command 0 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
 end_of_initialization FFA 0 CODE 0 cinit dist/default/production\lcd_4_bits.X.production.o
 __Hintentry 4 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
+FM_Lcd_Send_Nibble@nibble 72 0 COMMON 1 cstackCOMMON dist/default/production\lcd_4_bits.X.production.o
 __Hreset_vec 4 0 CODE 0 reset_vec -
-__ptext1 F9E 0 CODE 0 text1 dist/default/production\lcd_4_bits.X.production.o
+_FM_Lcd_Send_Charact E2E 0 CODE 0 text3 dist/default/production\lcd_4_bits.X.production.o
+__ptext1 E54 0 CODE 0 text1 dist/default/production\lcd_4_bits.X.production.o
+__ptext2 E6A 0 CODE 0 text2 dist/default/production\lcd_4_bits.X.production.o
+__ptext3 E2E 0 CODE 0 text3 dist/default/production\lcd_4_bits.X.production.o
+__ptext4 E84 0 CODE 0 text4 dist/default/production\lcd_4_bits.X.production.o
+__ptext5 E3E 0 CODE 0 text5 dist/default/production\lcd_4_bits.X.production.o
+__ptext6 F44 0 CODE 0 text6 dist/default/production\lcd_4_bits.X.production.o
+__ptext7 EBC 0 CODE 0 text7 dist/default/production\lcd_4_bits.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
-__H__absolute__ 0 0 ABS 0 __absolute__ -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-___heap_hi 0 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
-___heap_lo 0 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\xcAs20f8.\driver_tmp_15.o
+FM_Lcd_Send_Command@comm 76 0 COMMON 1 cstackCOMMON dist/default/production\lcd_4_bits.X.production.o
+_FM_Lcd_Send_Command E3E 0 CODE 0 text5 dist/default/production\lcd_4_bits.X.production.o
 __end_of__initialization FFA 0 CODE 0 cinit dist/default/production\lcd_4_bits.X.production.o
+__size_of_Init_HFINTOSC 0 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
 __Lclrtext 0 0 ABS 0 clrtext -
+_FM_Lcd_Init_Gpio EBC 0 CODE 0 text7 dist/default/production\lcd_4_bits.X.production.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\lcd_4_bits.X.production.o
 __Hend_init 8 0 CODE 0 end_init -
-__end_of_main FFA 0 CODE 0 maintext dist/default/production\lcd_4_bits.X.production.o
+__end_of_main F44 0 CODE 0 maintext dist/default/production\lcd_4_bits.X.production.o
+__end_of_FM_Lcd_Init_Config EBC 0 CODE 0 text4 dist/default/production\lcd_4_bits.X.production.o
 _OSCEN 891 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
-__end_of_Init_HFINTOSC FB8 0 CODE 0 text1 dist/default/production\lcd_4_bits.X.production.o
+__end_of_Init_HFINTOSC E84 0 CODE 0 text2 dist/default/production\lcd_4_bits.X.production.o
 _TRISA 11 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
 _TRISC 13 0 ABS 0 - dist/default/production\lcd_4_bits.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
+_Init_System_Gpio E54 0 CODE 0 text1 dist/default/production\lcd_4_bits.X.production.o
 __initialization FFA 0 CODE 0 cinit dist/default/production\lcd_4_bits.X.production.o
+__end_of_FM_Lcd_Send_Charact E3E 0 CODE 0 text3 dist/default/production\lcd_4_bits.X.production.o
+_FM_Lcd_Init_Config E84 0 CODE 0 text4 dist/default/production\lcd_4_bits.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -393,9 +473,15 @@ __initialization FFA 0 CODE 0 cinit dist/default/production\lcd_4_bits.X.product
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FD FFA 3 2
-text1 0 7CF F9E D 2
-maintext 0 7DC FB8 21 2
-cstackCOMMON 1 70 70 3 1
+text1 0 72A E54 B 2
+text2 0 735 E6A D 2
+text3 0 717 E2E 8 2
+text4 0 742 E84 1C 2
+text5 0 71F E3E B 2
+text6 0 7A2 F44 5B 2
+text7 0 75E EBC 1F 2
+maintext 0 77D EFA 25 2
+cstackCOMMON 1 70 70 9 1
 reset_vec 0 0 0 4 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section

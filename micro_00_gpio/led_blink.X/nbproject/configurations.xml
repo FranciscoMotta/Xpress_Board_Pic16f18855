@@ -10,6 +10,11 @@
                    displayName="Linker Files"
                    projectFiles="true">
     </logicalFolder>
+    <logicalFolder name="ScriptFiles"
+                   displayName="Script Files"
+                   projectFiles="true">
+      <itemPath>autoload.py</itemPath>
+    </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
